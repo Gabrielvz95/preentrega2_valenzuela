@@ -1,0 +1,405 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Fuente General*/
+    font-family: 'Krub', sans-serif;
+    /*font-family: 'Saira Semi Condensed', sans-serif*/
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    height: 100px;
+    width: 100%;
+}
+
+header div{
+    margin: auto 0;
+    width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    margin: 10px;
+    width: 460px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+/* Menu de navegacion */
+nav{
+    display: flex;
+    align-items: flex-end;
+}
+
+nav ul{
+    height: 30px;
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    background-color: #303841;
+    border-radius: 5px 0px 0px 5px;
+    margin-bottom: 0;
+}
+nav ul li{
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    margin: 0px 20px 0px 20px;
+    color: #F7F7F7;
+}
+
+.li_animacion{
+    position: relative;
+}
+
+.link:after{
+    align-items: center;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}
+
+.link:hover::after{
+    width: 100%;
+    right: 0;
+}
+
+
+/* Estilo Imagen de inicio */
+.body_inicio{
+    background-color: #2E4750;
+    background-image: url(../img/fondo-main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
+}
+
+.contenedor_inicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* INFOMACION DE INICIO */
+
+.contenedor_inicio section{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor_inicio section div{
+    margin: 20px;
+    width: 600px;
+    height: 400px;
+    background-color: #0000008d;
+    backdrop-filter: blur(2px)
+}
+.contenedor_inicio div h1{
+    color: #F7F7F7;
+}
+
+/* PROYECTOS */
+
+.bodyProyecto{
+    background-color: #2E4750;
+}
+
+.tituloProyectos{
+    background-color: yellow;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size: 26px;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+/* Contenendor cajas de pryecto */
+.proyectoPadre{
+    width: 100%;
+    height: 800px;
+    background-color: #2E4750;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Estilo caja de proyectos */
+.proyectoPadre section{
+    background-color: #2E4750 ;
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+
+/* Sub titulo de los proyectos */
+.subProyecto{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.subProyecto h1{
+    color: #F7F7F7;
+    font-size: 26px;
+    padding: 1px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+/* Modificar Pie de proyectos */
+
+.proyectoPadre section p{
+    text-align: start;
+    margin-top: 550px;
+    background-color: rgb(90, 90, 90);
+    color: #F7F7F7;
+    border-radius: 5px;
+}
+
+
+
+/* Ajuste de iamgenes de proyectos */
+.proyectoPadre section{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*----- Steel Framming ----- */
+.contenedorSteel{
+    width: 100%;
+    height: 100%;
+    background-color: #2E4750;
+    display: inline-block;
+}
+
+/* Estilos Titulo Principal Steel Framming */
+.tituloSteelframming{
+    background-color: yellow;
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.tituloSteelframming h3{
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    line-height: 30px;
+    font-size: 26px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+/* Estilo "¿Que es?" */
+.queEs{
+    color: #F7F7F7;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.parrafo{
+    text-align: justify;
+    color: #F7F7F7;
+    padding: 5px;
+    margin: auto;
+}
+
+/* Ajuste de imagen */
+.imagenContenedor{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+.imagenContenedor{
+    background-image: url(img/Qué-es-Steel-Framing.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/* -----Quienes Somos */
+.contenedorSomos{
+    background-color: #2E4750;
+    width: 100%;
+    height: 100%;
+    background-color: #2E4750;
+    display: inline-block;
+}
+
+.contenedorSomos div{
+    background-color: #303841;
+    width: 800px;
+    height: 900px;
+    margin: 0 auto;
+    border-color:black  ;
+    border-style: dashed;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contenedorSomos p{
+    text-align: center;
+    margin: 10px;
+    color: #F7F7F7;
+}
+
+.tituloSomos{
+    background-color: yellow;
+    width: 25%;
+    height: 40px;
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 2px;
+    line-height: 33px;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+/* ----- Contacto -----*/
+.bodyContacto{
+    background-color: #2E4750;
+}
+
+.contenedorContacto{
+    background-color: #2E4750;
+    height: 810px;
+    width: 100%;
+
+}
+
+.tituloFormulario {
+    background-color: yellow;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    font-size: 26px;
+    margin: 20px auto;
+    border-radius: 5px;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.formulario{
+    background-color: #F7F7F7;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    box-shadow: 20px 10px 10px #303841;
+    border-radius: 10px;
+}
+
+.formulario input, label, textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+/* ------Footer------ */
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: yellow;
+
+    bottom: 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 1px;
+    font-family: 'Saira Semi Condensed', sans-serif
+}
+
+/* MEDIAS QUERIES */
+@media (max-width:600px){
+    header{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+
+
+    }
+}
+/* Logo */
+@media screen and (max-width:600px){
+
+    header div{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    header div img{
+        width: 90%;
+        height: auto;
+        margin-top: 5px;
+
+    }
+}
+/* Barra de navegacion */
+@media (max-width: 600px){
+    nav{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    nav ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width:600px){
+    body{
+    width: 100%;
+    height: 100%;
+    }
+}
