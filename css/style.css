@@ -135,9 +135,26 @@ nav ul li a {
     background-color: #2E4750;
 }
 
+.proyectoPadre{
+    width: 100%;
+    height: 800px;
+    background-color: #2E4750;
+}
+
+.proyectoPadre section{
+    background-color: #2E4750 ;
+    width: 400px;
+    height: 600px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+
 .tituloProyectos{
     background-color: yellow;
-    width: 200px;
+    width: 400px;
     height: 40px;
     text-align: center;
     font-size: 26px;
@@ -146,27 +163,9 @@ nav ul li a {
     font-family: 'Saira Semi Condensed', sans-serif;
 }
 
-/* Contenendor cajas de pryecto */
-.proyectoPadre{
-    width: 100%;
-    height: 800px;
-    background-color: #2E4750;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-/* Estilo caja de proyectos */
-.proyectoPadre section{
-    background-color: #2E4750 ;
-    width: 400px;
-    height: 600px;
-    margin: 20px;
-    border-radius: 5px;
-    margin-right: 25px;
-    margin-bottom: 50px;
-}
 
 /* Sub titulo de los proyectos */
+
 .subProyecto{
     width: 100%;
     height: 40px;
@@ -177,23 +176,32 @@ nav ul li a {
     font-family: 'Saira Semi Condensed', sans-serif;
 }
 
-.subProyecto h1{
+
+.subProyecto h3{
     color: #F7F7F7;
     font-size: 26px;
     padding: 1px;
     font-family: 'Saira Semi Condensed', sans-serif;
+
 }
 
-/* Modificar Pie de proyectos */
-
 .proyectoPadre section p{
-    text-align: start;
+    text-align: center;
     margin-top: 550px;
-    background-color: rgb(90, 90, 90);
+    background-color: black;
     color: #F7F7F7;
     border-radius: 5px;
 }
 
+.proyecto1{
+    background-image: url(../img/proyecto_1/puerto-santata-fe.jpg);
+}
+.proyecto2{
+    background-image: url(../img/proyecto_2/el_paso_1.jpg);
+}
+.proyecto3{
+    background-image: url(../img/proyecto3/DSC_0454.jpg);
+}
 
 
 /* Ajuste de iamgenes de proyectos */
