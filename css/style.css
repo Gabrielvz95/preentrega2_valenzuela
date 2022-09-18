@@ -131,30 +131,10 @@ nav ul li a {
 
 /* PROYECTOS */
 
-.bodyProyecto{
-    background-color: #2E4750;
-}
-
-.proyectoPadre{
-    width: 100%;
-    height: 800px;
-    background-color: #2E4750;
-}
-
-.proyectoPadre section{
-    background-color: #2E4750 ;
-    width: 400px;
-    height: 600px;
-    margin: 20px;
-    display: inline-block;
-    border-radius: 5px;
-    margin-right: 25px;
-    margin-bottom: 50px;
-}
-
-.tituloProyectos{
+/* titutlo */
+.tituloProyectos{ 
     background-color: yellow;
-    width: 400px;
+    width: 150px;
     height: 40px;
     text-align: center;
     font-size: 26px;
@@ -162,7 +142,23 @@ nav ul li a {
     border-radius: 5px;
     font-family: 'Saira Semi Condensed', sans-serif;
 }
+.bodyProyecto{
+    background-color: #2E4750;
+}
+.proyecto_padre{
+    width: 100%;
+    height: 800px;
+    background-color: #2E4750;
+    display: flex;
+    justify-content: space-around;
+}
 
+.proyecto_padre section{
+    background-color: #2E4750 ;
+    width: 400px;
+    height: 600px;
+    border-radius: 5px;
+}
 
 /* Sub titulo de los proyectos */
 
@@ -177,7 +173,7 @@ nav ul li a {
 }
 
 
-.subProyecto h3{
+.subProyecto h2{
     color: #F7F7F7;
     font-size: 26px;
     padding: 1px;
@@ -185,7 +181,7 @@ nav ul li a {
 
 }
 
-.proyectoPadre section p{
+.proyecto_padre section p{
     text-align: center;
     margin-top: 550px;
     background-color: black;
@@ -205,7 +201,7 @@ nav ul li a {
 
 
 /* Ajuste de iamgenes de proyectos */
-.proyectoPadre section{
+.proyecto_padre section{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -369,13 +365,10 @@ footer p {
         flex-direction: column;
         width: 100%;
         height: auto;
-
-
     }
 }
 /* Logo */
 @media screen and (max-width:600px){
-
     header div{
         width: 100%;
         height: auto;
@@ -385,7 +378,6 @@ footer p {
         width: 90%;
         height: auto;
         margin-top: 5px;
-
     }
 }
 /* Barra de navegacion */
@@ -409,5 +401,16 @@ footer p {
     body{
     width: 100%;
     height: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .proyecto_padre{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .proyecto_padre section{
+        margin-bottom: 60px;
     }
 }
