@@ -131,7 +131,7 @@ nav ul li a {
 /* PROYECTOS */
 
 /* titutlo */
-.tituloProyectos{ 
+.titulo-proyectos{ 
     background-color: yellow;
     width: 150px;
     height: 40px;
@@ -141,18 +141,19 @@ nav ul li a {
     border-radius: 5px;
     font-family: 'Saira Semi Condensed', sans-serif;
 }
-.bodyProyecto{
+.body-proyecto{
     background-color: #2E4750;
 }
-.proyecto_padre{
+.proyecto-padre{
     width: 100%;
     height: 800px;
-    background-color: #2E4750;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
 }
 
-.proyecto_padre section{
+.proyecto-padre section{
     background-color: #2E4750 ;
     width: 400px;
     height: 600px;
@@ -161,7 +162,7 @@ nav ul li a {
 
 /* Sub titulo de los proyectos */
 
-.subProyecto{
+.sub-proyecto{
     width: 100%;
     height: 40px;
     background-color: black;
@@ -172,7 +173,7 @@ nav ul li a {
 }
 
 
-.subProyecto h2{
+.sub-proyecto h2{
     color: #F7F7F7;
     font-size: 26px;
     padding: 1px;
@@ -180,7 +181,7 @@ nav ul li a {
 
 }
 
-.proyecto_padre section p{
+.proyecto-padre section p{
     text-align: center;
     margin-top: 550px;
     background-color: black;
@@ -188,19 +189,19 @@ nav ul li a {
     border-radius: 5px;
 }
 
-.proyecto1{
+.proyecto-1{
     background-image: url(../img/proyecto_1/puerto-santata-fe.jpg);
 }
-.proyecto2{
+.proyecto-2{
     background-image: url(../img/proyecto_2/el_paso_1.jpg);
 }
-.proyecto3{
+.proyecto-3{
     background-image: url(../img/proyecto3/DSC_0454.jpg);
 }
 
 
 /* Ajuste de iamgenes de proyectos */
-.proyecto_padre section{
+.proyecto-padre section{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
